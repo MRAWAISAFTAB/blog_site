@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main">
+    <form class="form">
+      <div class="headings">
+        <h1>Sign in</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adi elit.</p>
+      </div>
+      <!-- <input class="input" type="text"  id="Uname"  placeholder="Enter Name" required /> -->
+      <input class="input" type="email" id="Email" placeholder="Email" required />
+      <input class="input" type="password" id="pass" placeholder="password" required />
+      <button class="submit" type="submit" id="submit" onclick="login(event)">Sign in</button>
+      <div class="sign-in">
+        <p>Don't have an account?<a href="index.html"><span> Sing up</span></a></p>
+      </div>
+    </form>
+
+    <div class="left">
+      <h1>WELCOME</h1>
+      <!-- <h2>Awais Aftab</h2> -->
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eveniet ea a iure sit placeat ab delectus
+        corrupti accusamus enim repellendus atque necessitatibus blanditiis commodi officia perferendis aut, earum
+        voluptatibus.</p>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+
+    function login(event) {
+      event.preventDefault(); // stop form reload
+
+      let email = document.getElementById("Email").value;
+      let password = document.getElementById("pass").value;
+
+      let users = JSON.parse(localStorage.getItem("users")) || [];
+      if (email === "" || pass === "") {
+        alert("Please fill in all fields.");
+        return;
+      }
+      let found = false;
+
+      for (let i = 0; i < users.length; i++) {
+        if (users[i].emai === email && users[i].pass === password) {
+          localStorage.setItem("loggedInUser", JSON.stringify(users[i]));
+          alert("Login successful! Welcome, " + users[i].name);
+          window.location.href = "welcome.html";
+          found = true;
+          break;
+        }
+      }
+
+      if (!found) {
+        alert("Incorrect email or password.");
+      }
+    }
+  </script>
+</body>
+
+</html>

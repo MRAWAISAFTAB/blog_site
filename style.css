@@ -1,0 +1,143 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    height: 600px;
+    background-color: rgb(123, 184, 241);
+}
+
+.main {
+    background-color: rgb(50, 125, 238);
+    width: 65%;
+    display: flex;
+    justify-content: space-evenly;
+    justify-self: center;
+    margin-top: 3%;
+    height: 90%;
+    align-items: center;
+    padding-right: 70px;
+    background-image: url(./assets/Techno\ Lines\ Simple\ Blue\ Background\ Wallpaper\ Image\ For\ Free\ Download\ -\ Pngtree.jpeg);
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    box-shadow: 15px 15px 8px rgba(0, 0, 0, 0.352);
+
+}
+
+.form {
+    background-color: whitesmoke;
+    height: 85%;
+    width: 40%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+    gap: 20px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.352);
+    outline: none;
+}
+
+@font-face {
+    font-family: 'Awais';
+    src: url(./assets/Barlow-Medium.ttf);
+}
+
+.headings {
+    width: 80%;
+    font-size: 18px;
+    margin-top: 25px;
+    gap: none;
+    font-family: 'Awais';
+    color: rgb(28, 80, 159);
+}
+
+p {
+    font-size: 13px;
+    font-family: 'Awais';
+    padding-top: 5px;
+    text-align: start;
+    color: black;
+}
+
+.input {
+    width: 83%;
+    height: 50px;
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 50px;
+    border: 2px solid;
+    border-radius: 12px;
+    background-color: #f0f0f0;
+    color: black;
+    font-family: 'Awais';
+    box-sizing: border-box;
+}
+
+.submit {
+    width: 90%;
+    height: 53px;
+    font-size: 15px;
+    line-height: 50px;
+    border-radius: 12px;
+    border: 2px solid black;
+    font-family: 'Awais';
+    background: linear-gradient(to left, #009dff, #0072ff);
+    color: white;
+    cursor: pointer;
+}
+
+.submit:hover {
+    transition: all 1s;
+    background: linear-gradient(to right, #4babe6, #2884f4);
+    font-size: 17px;
+}
+
+.sign-in {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 80%;
+}
+
+.sign-in a {
+    font-size: 14px;
+    color: black;
+}
+
+.submit a {
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+.sign-in span:hover {
+    transition: all 1s;
+    color: rgb(56, 112, 197);
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.left {
+    width: 40%;
+    height: 50%;
+    font-family: 'Awais';
+    line-height: 30px;
+}
+
+.left h1 {
+    font-size: 35px;
+    color: #f0f0f0;
+    letter-spacing: 2px;
+    line-height: 50px;
+}
+
+.left h2 {
+    color: #fbff22;
+    letter-spacing: 1px;
+}
+
+.left p {
+    color: #f0f0f0;
+    font-family: "Awais";
+}
+
